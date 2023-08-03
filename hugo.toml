@@ -2,7 +2,6 @@ baseURL = 'https://caroljeangallagher.github.io/website/'
 languageCode = 'en-us'
 title = 'Gallaghers'
 theme = 'hugo-theme-cleanwhite'
-canonifyURLs = true
 
 [outputs]
 home = ["HTML", "RSS"]
