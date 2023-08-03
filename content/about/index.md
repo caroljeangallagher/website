@@ -1,6 +1,6 @@
 ---
 layout: page
-image: "/images/header-globe.jpg"
+image: "images/header-globe.jpg"
 ---
 
 ## About Us

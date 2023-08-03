@@ -8,7 +8,7 @@ canonifyURLs = true
 home = ["HTML", "RSS"]
 
 [params]
-header_image = "/images/header-globe.jpg"
+header_image = "images/header-globe.jpg"
 SEOTitle = "The Wycliffe Ministry of Steve & Carol Jean Gallagher"
 keyword = "Wycliffe, blog, ministry"
 sidebar_about_description = "Serving with Wycliffe since 1992"
