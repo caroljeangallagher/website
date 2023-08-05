@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% import "elements.html" as elements %}
+
+{% block body %}
+
+<section class="bg-center bg-cover bg-[url('https://caroljeangallagher.github.io/website/images/header-globe.jpg')] bg-gray-400 bg-blend-multiply">
+  <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+    <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+      Steve & Carol Jean Gallagher
+    </h1>
+    <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+      Serving with Wycliffe since 1989.
+    </p>
+    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+      <a href="{{get_url(path='@/about.md')}}" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+          About us
+      </a>
+      <a href="{{get_url(path='@/blog/_index.md')}}" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+          Blog
+      </a>
+      <a href="https://www.wycliffe.org/partner/Gallaghers" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-900">
+        Give now
+        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="my-20">
+  <div class="max-w-3xl mx-auto markdown">
+    <h2>About us</h2>
+    <div class="grid gap-4 grid-cols-3">
+      <div class="col-span-2 markdown">
+        {% set intro_page = get_page(path="intro.md") %}
+        {{ intro_page.content |safe }}
+      </div>
+      <div>
+        {% set image = resize_image(path="images/avatar.jpg", width=250, height=0, op="fit_width") %}
+        <img class="rounded-lg" src="{{ image.url }}" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="my-20">
+  <div class="mx-auto max-w-3xl markdown">
+    {% set video_page = get_page(path="homepage-video.md") %}
+    {{ video_page.content |safe }}
+  </div>
+</section>
+<section class="my-20">
+  <div class="mx-auto max-w-3xl markdown">
+    {% set prayer_page = get_page(path="prayer.md") %}
+    {{ prayer_page.content |safe }}
+  </div>
+</section>
+
+{{ elements::footer() }}
+
+{% endblock body %}

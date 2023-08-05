@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% import "elements.html" as elements %}
+
+{% block body %}
+
+  {{ elements::nav() }}
+
+  {% block content %}
+  {% endblock content %}
+
+  {{ elements::footer() }}
+
+{% endblock body %}
+

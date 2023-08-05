@@ -1,21 +1,15 @@
----
-layout:     post
++++
+title = "God is on the Move!"
+author = "Steve"
+image = "https =//mcusercontent.com/19a07466c3b229babf6237ffc/images/67c938c5-6646-f8bc-ef8a-b43e8945b710.jpg"
 
-title:      "God is on the Move!"
-author:     "Steve"
-date: "2023-04-07"
-image: "https://mcusercontent.com/19a07466c3b229babf6237ffc/images/67c938c5-6646-f8bc-ef8a-b43e8945b710.jpg"
-published: true 
-tags:
-  - Life
-  - Prayer
-
-categories: [ Life ]
----
+[taxonomies]
+tags = ["life", "prayer"]
++++
 
 Lately we’ve heard exciting things about how God is multiplying the progress of Bible translation throughout the world.
-- “**God is on the move**, and His Spirit is being poured out in ways that we’ve never experienced before.”* 
-- “All around the world, **Bible translation is growing exponentially**,” far beyond expectations. 
+- “**God is on the move**, and His Spirit is being poured out in ways that we’ve never experienced before.”
+- “All around the world, **Bible translation is growing exponentially**,” far beyond expectations.
 - “**People are encountering Jesus** as they receive Scripture in a language and format they clearly understand.”
 - Yet “the **remaining languages** that don’t have God’s Word today are unreached for a reason; they’re the hardest of the hard places.”
 
@@ -25,9 +19,7 @@ Wycliffe, along with other Bible translation partners, is striving toward the go
 
 There are 7,388 total languages in the world.
 
-[](images/global-scripture-access.jpg)
-
-From Wycliffe Global Alliance
+{{ captioned_image(path='images/global-scripture-access.jpg', caption='From Wycliffe Global Alliance') }}
 
 You who pray for us or partner with us financially are a part of this work! You play a role in declaring God’s name among the nations. You can rejoice and celebrate that God is doing amazing things around the world through his global Church as He calls people by name and invites them into a relationship with Him. We are grateful for your participation with us in the ministry of Bible translation. 
 

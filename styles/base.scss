@@ -1,0 +1,9 @@
+@import "./markdown.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wycliffe-logo svg {
+  color: "red";
+}
