@@ -69,7 +69,11 @@
 /* Link styling */
 .markdown a {
   @apply underline;
-  @apply text-blue-400;
+  @apply text-orange-800;
+}
+
+.markdown a:hover {
+  @apply text-orange-600;
 }
 
 /* Code/Verbatim styling */

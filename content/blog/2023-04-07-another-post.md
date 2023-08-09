@@ -4,7 +4,7 @@ author = "Steve"
 image = "https =//mcusercontent.com/19a07466c3b229babf6237ffc/images/67c938c5-6646-f8bc-ef8a-b43e8945b710.jpg"
 
 [taxonomies]
-tags = ["life", "prayer"]
+tags = ["ministry", "prayer"]
 +++
 
 Lately we’ve heard exciting things about how God is multiplying the progress of Bible translation throughout the world.

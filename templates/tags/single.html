@@ -9,12 +9,12 @@
 {% endblock posthead %}
 
 {% block content %}
-  <div class="mx-auto max-w-prose markdown">
-  <h3>{{ term.pages | length }} pages tagged with "{{ term.name }}"</h1>
-  <div class="taxonomy-container">
-    {% for post in term.pages %}
-      {{ post_macros::post_preview(post=post) }}
-    {% endfor %}
-  </div>
+  <div class="mx-auto max-w-prose markdown my-12">
+    <h3>{{ term.pages | length }} pages tagged with <em>{{ term.name }}</em></h1>
+    <div class="taxonomy-container">
+      {% for post in term.pages %}
+        {{ post_macros::post_preview(post=post) }}
+      {% endfor %}
+    </div>
   </div>
 {% endblock content %}

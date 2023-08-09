@@ -3,8 +3,8 @@
 {% import "post-preview.html" as post_macros %}
 
 {% block content %}
-<div class="container mx-auto max-w-prose my-12">
-  <h1 class="text-5xl">Recent posts</h1>
+<div class="container mx-auto max-w-prose my-12 markdown">
+  <h1>Recent posts</h1>
   {% for post in section.pages %}
     {{ post_macros::post_preview(post=post) }}
   {% endfor %}

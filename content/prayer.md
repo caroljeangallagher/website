@@ -1,8 +1,9 @@
 +++
 render = false
-+++
 
-## Current prayer requests
+[extra]
+last_updated = 2023-08-08
++++
 
 Please pray for...
 
