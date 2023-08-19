@@ -9,7 +9,7 @@
 {% endblock posthead %}
 
 {% block content %}
-  <div class="mx-auto max-w-prose markdown my-12">
+  <div class="mx-auto max-w-prose prose dark:prose-invert my-12">
     <h3>{{ term.pages | length }} pages tagged with <em>{{ term.name }}</em></h1>
     <div class="taxonomy-container">
       {% for post in term.pages %}

@@ -5,6 +5,8 @@
 
 {% block body %}
 
+<div class="flex flex-col h-screen">
+<div class="flex-grow dark:bg-slate-800">
 <section class="bg-center bg-cover bg-[url('https://caroljeangallagher.github.io/website/images/header-globe.jpg')] bg-gray-400 bg-blend-multiply">
   <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
     <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
@@ -30,10 +32,12 @@
   </div>
 </section>
 <section class="my-20">
-  <div class="max-w-3xl mx-auto markdown">
-    <h2>About us</h2>
+  <div class="max-w-3xl mx-auto">
+    <div class="prose dark:prose-invert">
+      <h2>About us</h2>
+    </div>
     <div class="grid gap-4 grid-cols-3">
-      <div class="col-span-2 markdown">
+      <div class="col-span-2 prose dark:prose-invert">
         {% set intro_page = get_page(path="intro.md") %}
         {{ intro_page.content |safe }}
       </div>
@@ -45,7 +49,7 @@
   </div>
 </section>
 <section class="my-20">
-  <div class="mx-auto max-w-3xl markdown">
+  <div class="mx-auto max-w-3xl prose dark:prose-invert">
     <h2>Recent updates</h2>
     {% set blogs = get_section(path="blog/_index.md") %}
     {% set latest = blogs.pages.0 %}
@@ -58,7 +62,7 @@
   </div>
 </section>
 <section class="my-20">
-  <div class="mx-auto max-w-3xl markdown">
+  <div class="mx-auto max-w-3xl prose dark:prose-invert">
     <h2>Current prayer requests</h2>
     {% set prayer_page = get_page(path="prayer.md") %}
     <div class="text-gray-700 my-2 italic">
@@ -67,7 +71,9 @@
     {{ prayer_page.content | safe }}
   </div>
 </section>
-
 {{ elements::footer() }}
+</div>
+</div>
+
 
 {% endblock body %}
